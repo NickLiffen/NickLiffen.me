@@ -1,0 +1,13 @@
+/* TEAM */
+  Title: Nick Liffen
+  Site: nickliffen.me
+  Twitter: nickliffen
+  Location: United Kingdom
+
+/* SITE */
+  Last Update: 2020-02-05
+  Standard: HTML5, CSS
+  Components:
+
+/* THANKS */
+  Name: Nick Liffen
