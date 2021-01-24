@@ -62,7 +62,7 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-nav-item.active {
-	font-weight: 700
+	font-weight: 900;
 }
 
 @media(min-width:48rem) {
@@ -70,20 +70,28 @@ a.sidebar-nav-item:focus {
 		position: absolute;
 		right: 1rem;
 		bottom: 1rem;
-		left: 1rem
+		left: 1rem;
 	}
 }
 
 .content {
 	padding-top: 4rem;
-	padding-bottom: 4rem
+	padding-bottom: 4rem;
 }
 
 @media(min-width:48rem) {
 	.content {
 		max-width: 38rem;
 		margin-left: 20rem;
-		margin-right: 2rem
+		margin-right: 2rem;
+	}
+}
+
+@media(max-width:48rem) {
+	.sidebar-nav-item {
+		padding-bottom: 15px;
+		padding-top: 15px;
+		font-size: 23px;
 	}
 }
 
