@@ -5,9 +5,11 @@
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192",
-    "purpose": "any"
+    "purpose": "any maskable"
   }],
-  "start_url": "./index.html",
+  "start_url": "https://nickliffen.dev/",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "theme_color": "#fafafa",
+  "display": "fullscreen",
+  "prefer_related_applications": false
 }
