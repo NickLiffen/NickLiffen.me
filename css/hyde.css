@@ -14,6 +14,10 @@ html {
 	}
 }
 
+.mb {
+	margin-bottom: 20px
+}
+
 .sidebar {
 	text-align: center;
 	padding: 2rem 1rem;
