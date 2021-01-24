@@ -1,6 +1,7 @@
 var cacheName = 'NickLiffenBlog';
 
 var appShellFiles = [
+  '/',
   '/404.html',
   '/index.html',
   '/css/404.html',
