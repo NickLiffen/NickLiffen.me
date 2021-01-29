@@ -33,9 +33,12 @@ self.addEventListener('fetch', (event) => {
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
+      console.log('getting cache keys,', cacheNames)
       return Promise.all(
         cacheNames.filter(function(cacheName) {
+          console.log('filtered cacheNames,', cacheName);
         }).map(function(cacheName) {
+          console.log('cacheName maps', cacheName);
           return caches.delete(cacheName);
         })
       );
