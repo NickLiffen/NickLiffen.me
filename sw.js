@@ -1,4 +1,4 @@
-const version = "v1.0.0";
+const version = "v1.0.1"; // <--- Change this on every release
 const cache = `nickliffenblog-${version}`;
 const files = [
   './index.html',
@@ -26,6 +26,19 @@ self.addEventListener('fetch', (event) => {
           return response;
         });
       });
+    })
+  );
+});
+
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+        }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
     })
   );
 });
