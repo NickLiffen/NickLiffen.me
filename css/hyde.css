@@ -42,14 +42,14 @@ html {
 
 .sidebar-about h1 {
 	color: #fff;
-	margin-top: 0;
 	font-family: abril fatface, serif;
-	font-size: 3.25rem
+	font-size: 3.25rem;
+	margin-top: 0;
 }
 
 .sidebar-nav {
+	list-style: none;
 	padding-left: 0;
-	list-style: none
 }
 
 .sidebar-nav-item {
@@ -67,31 +67,32 @@ a.sidebar-nav-item:focus {
 
 @media(min-width:48rem) {
 	.sidebar-sticky {
-		position: absolute;
-		right: 1rem;
 		bottom: 1rem;
 		left: 1rem;
+		position: absolute;
+		right: 1rem;
+
 	}
 }
 
 .content {
-	padding-top: 4rem;
 	padding-bottom: 4rem;
+	padding-top: 4rem;
 }
 
 @media(min-width:48rem) {
 	.content {
-		max-width: 38rem;
 		margin-left: 20rem;
 		margin-right: 2rem;
+		max-width: 38rem;
 	}
 }
 
 @media(max-width:48rem) {
 	.sidebar-nav-item {
+		font-size: 23px;
 		padding-bottom: 15px;
 		padding-top: 15px;
-		font-size: 23px;
 	}
 }
 
@@ -118,6 +119,11 @@ a.sidebar-nav-item:focus {
 		margin-left: 4rem;
 		margin-right: 22rem
 	}
+}
+
+.rounded {
+	border-radius: 5px;
+  border-top: 4px solid #bbb;
 }
 
 .theme-base-08 .sidebar {
