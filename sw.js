@@ -4,7 +4,9 @@ const files = [
   './index.html',
   './404.html',
   './css/hyde.css',
-  './css/poole.css'
+  './css/poole.css',
+  './articles/increasing-adoption-of-ghas-code-scanning-at-scale.html',
+  './articles/building-a-simple-website.html'
 ]
 
 self.addEventListener('install', (event) => {
