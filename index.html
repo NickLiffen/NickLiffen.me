@@ -93,12 +93,12 @@
     </div>
 <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js')
-  .then((reg) => {
-    console.log('Registration succeeded. Scope is ' + reg.scope);
-  }).catch((error) => {
-    console.log('Registration failed with ' + error);
-  });
+ navigator.serviceWorker.register('/sw.js').then(function() {
+   console.log('service worker is is all cool.');
+ }).catch(function(e) {
+   console.error('service worker is not so cool.', e);
+   throw e;
+ });
 }
 </script>
 </body>
