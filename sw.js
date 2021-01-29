@@ -20,9 +20,13 @@ self.addEventListener('install', (event) => {
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((resp) => {
+      console.log('Response from cache Matching', resp)
       return resp || fetch(event.request).then((response) => {
+      console.log('Fetching Event Request', response)
         return caches.open(cache).then((cache) => {
+        console.log('Opening Cache', cache)
           cache.put(event.request, response.clone());
+        console.log('Returning Response', response)
           return response;
         });
       });
