@@ -13,7 +13,8 @@
     "sizes": "512x512",
     "purpose": "any maskable"
   }],
-  "start_url": "https://nickliffen.dev/",
+  "start_url": "./",
+  "scope": ".",
   "background_color": "#fafafa",
   "theme_color": "#fafafa",
   "display": "fullscreen",
