@@ -1,4 +1,4 @@
-const version = "v1.0.1"; // <--- Change this on every release
+const version = "v1.0.2"; // <--- Change this on every release
 const cache = `nickliffenblog-${version}`;
 const files = [
   './index.html',
