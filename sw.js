@@ -24,7 +24,12 @@ self.addEventListener('fetch', function(event) {
       return fetch(event.request).then(function (response) {
         let responseClone = response.clone();
         caches.open(cacheName).then(function (cache) {
-          cache.put(event.request, responseClone);
+          cache.put(event.request, responseClone).then(function(cacheResponse) {
+            console.log('cacheResponse',cacheResponse)
+          }).catch(function (e) {
+            console.log('err',e)
+            return caches.match('/404.html');
+          });
         });
         return response;
       }).catch(function () {
