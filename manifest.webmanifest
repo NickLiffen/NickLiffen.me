@@ -1,21 +1,43 @@
 {
-  "short_name": "NickLiffen",
-  "name": "NickLiffen",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192",
-    "purpose": "any maskable"
-  },
-  {
-    "src": "tile.png",
-    "type": "image/png",
-    "sizes": "512x512",
-    "purpose": "any maskable"
-  }],
-  "start_url": "https://nickliffen.dev/",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa",
-  "display": "fullscreen",
-  "prefer_related_applications": false
+	"short_name": "NJL Tech Blog",
+	"name": "Nick Liffens Technology Blog",
+	"icons": [{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "tile.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	],
+	"start_url": "./",
+	"scope": ".",
+	"background_color": "#fafafa",
+	"theme_color": "#fafafa",
+	"display": "fullscreen",
+	"prefer_related_applications": false,
+	"categories": ["education", "security"],
+	"description": "A technical blog about modern DevOps and Developer theories",
+	"dir": "auto",
+	"lang": "en-GB",
+	"shortcuts": [{
+			"name": "Nick Liffen's Blog | Technology, DevOps and Developer Experience Blog",
+			"url": "/",
+			"short_name": "Blog Home Page"
+		},
+		{
+			"name": "Nick Liffen Blog | Review of GitHub Advanced Security Code Scanning in an Enterprise | Blog Post",
+			"url": "/articles/review-ghas-code-scanning-enterprise.html",
+			"short_name": "GHAS Blog Post"
+		},
+		{
+			"name": "Nick Liffen Blog | Building a Simple Website | Blog Post",
+			"url": "articles/building-a-simple-website.html",
+			"short_name": "Builing a simple website"
+		}
+	]
 }
