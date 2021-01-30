@@ -9,7 +9,7 @@ this.addEventListener('install', function(e) {
       '/404.html',
       '/css/hyde.css',
       '/css/poole.css',
-      '/articles/increasing-adoption-of-ghas-code-scanning-at-scale.html',
+      '/articles/review-ghas-code-scanning-enterprise.html',
       '/articles/building-a-simple-website.html'
     ]);
   }))
