@@ -14,6 +14,18 @@ html {
 	}
 }
 
+ol li{
+  list-style-type: none;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
 .previous {
   background-color: #FFFFFF;
   color: black;
