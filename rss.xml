@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <atom:link href="https://nickliffen.dev/rss.xml" rel="self" type="application/rss+xml" />
+  <title>Nick Liffen's Blog | Technology, DevOps and Developer Blog</title>
+  <link>https://nickliffen.dev</link>
+  <description>Nick Liffen's Blog | Focusing on DevOps, Developer Experince and all aspects of Technology</description>
+  <category>Web Development</category>
+  <language>en-GB</language>
+  <item>
+    <title>Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post</title>
+    <link>https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html</link>
+    <description>Nick Liffen Blog | Review of GitHub Advanced Security Code Scanning in an Enterprise | Blog Post</description>
+    <guid>https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html</guid>
+    <pubDate>Sun, 31 Jan 2021 18:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Nick Liffen's Blog | Building a Simple Website | Blog Post</title>
+    <link>https://nickliffen.dev/articles/building-a-simple-website.html</link>
+    <description>Nick Liffen's Blog | The importance of building a simple but effective website | Blog Post</description>
+    <guid>https://nickliffen.dev/articles/building-a-simple-website.html</guid>
+    <pubDate>Sun, 24 Jan 2021 18:00:00 GMT</pubDate>
+  </item>
+</channel>
+
+</rss>
