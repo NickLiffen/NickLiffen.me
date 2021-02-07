@@ -1,4 +1,4 @@
-var VERSION = '4';
+var VERSION = '5';
 
 this.addEventListener('install', function(e) {
   e.waitUntil(caches.open(VERSION).then(cache => {
@@ -10,7 +10,8 @@ this.addEventListener('install', function(e) {
       '/css/hyde.css',
       '/css/poole.css',
       '/articles/review-ghas-code-scanning-enterprise.html',
-      '/articles/building-a-simple-website.html'
+      '/articles/building-a-simple-website.html',
+      '/articles/centralised-vs-decentralised-devops.html'
     ]);
   }))
 });
