@@ -9,11 +9,18 @@
   <category>Web Development</category>
   <language>en-GB</language>
   <item>
+    <title>Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post</title>
+    <link>https://nickliffen.dev/articles/centralised-vs-decentralised-devops.html</link>
+    <description>Nick Liffen Blog | Centralised vs Decentralised DevOps Toolchain - The Differences | Blog Post</description>
+    <guid>https://nickliffen.dev/articles/centralised-vs-decentralised-devops.html</guid>
+    <pubDate>Sun, 7 Feb 2021 18:00:00 GMT</pubDate>
+  </item>
+  <item>
     <title>Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post</title>
     <link>https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html</link>
     <description>Nick Liffen Blog | Review of GitHub Advanced Security Code Scanning in an Enterprise | Blog Post</description>
     <guid>https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html</guid>
-    <pubDate>Sun, 31 Jan 2021 18:00:00 GMT</pubDate>
+    <pubDate>Sat, 30 Jan 2021 18:00:00 GMT</pubDate>
   </item>
   <item>
     <title>Nick Liffen's Blog | Building a Simple Website | Blog Post</title>

@@ -40,12 +40,18 @@ ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #FFFFFF;
+	overflow: hidden;
+  text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -59,6 +65,9 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a {
   color: #0275d8;
   text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 /* Add a color on mouse-over */

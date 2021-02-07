@@ -35,9 +35,9 @@
 			"short_name": "GHAS Blog Post"
 		},
 		{
-			"name": "Nick Liffen Blog | Building a Simple Website | Blog Post",
-			"url": "articles/building-a-simple-website.html",
-			"short_name": "Builing a simple website"
+			"name": "Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post",
+			"url": "articles/centralised-vs-decentralised-devops.html",
+			"short_name": "Centralised vs Decentralised DevOps"
 		}
 	]
 }
