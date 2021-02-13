@@ -38,6 +38,11 @@
 			"name": "Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post",
 			"url": "articles/centralised-vs-decentralised-devops.html",
 			"short_name": "Centralised vs Decentralised DevOps"
+		},
+		{
+			"name": "Nick Liffen's Blog | InnerSourcing - A Success Story | Blog Post",
+			"url": "articles/innersourcing.html",
+			"short_name": "InnerSourcing - A Success Story"
 		}
 	]
 }
