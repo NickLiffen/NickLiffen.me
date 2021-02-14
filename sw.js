@@ -12,7 +12,8 @@ this.addEventListener('install', function(e) {
       '/articles/review-ghas-code-scanning-enterprise.html',
       '/articles/building-a-simple-website.html',
       '/articles/centralised-vs-decentralised-devops.html',
-      '/articles/innersourcing.html'
+      '/articles/innersourcing.html',
+      '/articles/page/2.html'
     ]);
   }))
 });
