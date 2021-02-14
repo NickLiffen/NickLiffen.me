@@ -45,7 +45,28 @@
 		"name": "Nick Liffen"
 	},
 	"blogPosts": [{
-			"@context": "http://schema.org",
+			"@type": "BlogPosting",
+			"@id": "https://nickliffen.dev/articles/centralised-vs-innersourcing-devops.html",
+			"name": "Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise | Blog Post",
+			"headline": "Let's discuss the value of InnerSoucing by sharing a real life example.",
+			"description": "Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise from Eli Lilly on InnerSourcing | Blog Post",
+			"image": "https://nickliffen.dev/img/innersourcing.png",
+			"datePublished": "2021-02-13",
+			"dateModified": "2021-02-13",
+			"keywords": ["Nick", "Liffen", "InnerSourcing", "Blog", "Enterprise"],
+			"articleSection": ["Context", "What does centralisation mean?", "What does decentralisation mean?", "So, what one should we pick?", "Conclusion"],
+			"articleBody": "...",
+			"url": "https://nickliffen.dev/articles/innersourcing.html",
+			"author": {
+				"@type": "Person",
+				"name": "Nick Liffen"
+			},
+			"publisher": {
+				"@type": "Person",
+				"name": "Nick Liffen"
+			}
+		},
+		{
 			"@type": "BlogPosting",
 			"@id": "https://nickliffen.dev/articles/centralised-vs-decentralised-devops.html",
 			"name": "Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post",
@@ -67,49 +88,28 @@
 				"name": "Nick Liffen"
 			}
 		},
-		{
-			"@type": "BlogPosting",
-			"name": "Nick Liffen's Blog | Building a Simple Website | Blog Post",
-			"headline": "The importance of building a simple website and why",
-			"description": "Nick Liffen's Blog | The importance of building a simple but effective website | Blog Post",
-			"image": "https://nickliffen.dev/img/tech.jpg",
-			"datePublished": "2021-01-23",
-			"dateModified": "2021-01-31",
-			"keywords": ["Websites", "Simple", "Accessibility", "Performance", "Best Practise"],
-			"articleSection": ["Context", "What I used", "What I learned from this experience"],
-			"articleBody": "This dates back to December 2020 over the Christmas break ...",
-			"url": "https://nickliffen.dev/articles/building-a-simple-website.html",
-			"author": {
-				"@type": "Person",
-				"name": "Nick Liffen"
-			},
-			"publisher": {
-				"@type": "Person",
-				"name": "Nick Liffen"
-			}
-		},
-		{
-			"@type": "BlogPosting",
-			"@id": "https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html",
-			"name": "Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post",
-			"headline": "Review of GitHub Advanced Security Code Scanning in an Enterprise",
-			"description": "Nick Liffen Blog | Review of GitHub Advanced Security Code Scanning in an Enterprise | Blog Post",
-			"image": "https://nickliffen.dev/img/ghas.jpg",
-			"datePublished": "2021-01-30",
-			"dateModified": "2021-02-01",
-			"keywords": ["GHAS", "GitHub Advanced Security", "Code Scanning", "Enterprise", "Nick Liffen"],
-			"url": "https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html",
-			"articleSection": ["Context", "What's Good", "What's Missing", "Concluding Thoughts"],
-			"articleBody": "GitHub recently introduced a suite of new products under ...",
-			"author": {
-				"@type": "Person",
-				"name": "Nick Liffen"
-			},
-			"publisher": {
-				"@type": "Person",
-				"name": "Nick Liffen"
-			}
-		}
+    {
+      "@type": "BlogPosting",
+      "@id": "https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html",
+      "name": "Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post",
+      "headline": "Review of GitHub Advanced Security Code Scanning in an Enterprise",
+      "description": "Nick Liffen Blog | Review of GitHub Advanced Security Code Scanning in an Enterprise | Blog Post",
+      "image": "https://nickliffen.dev/img/ghas.jpg",
+      "datePublished": "2021-01-30",
+      "dateModified": "2021-02-01",
+      "keywords": ["GHAS", "GitHub Advanced Security", "Code Scanning", "Enterprise", "Nick Liffen"],
+      "url": "https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html",
+      "articleSection": ["Context", "What's Good", "What's Missing", "Concluding Thoughts"],
+      "articleBody": "GitHub recently introduced a suite of new products under ...",
+      "author": {
+        "@type": "Person",
+        "name": "Nick Liffen"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Nick Liffen"
+      }
+    }
 	]
 }
 </script>
@@ -137,12 +137,41 @@
   <div class="content container">
     <h1 class="center post-title mb">Table of Contents</h1>
     <span class="center mb">
+      <div class="margin"><a href="./articles/innersourcing.html">An InnerSourcing Approach within an Enterprise</a></div>
       <div class="margin"><a href="./articles/centralised-vs-decentralised-devops.html">Centralised vs Decentralised DevOps Toolchain - The Differences</a></div>
       <div class="margin"><a href="./articles/review-ghas-code-scanning-enterprise.html">Review of GitHub Advanced Security Code Scanning in an Enterprise (Part 1)</a></div>
       <div class="margin"><a href="./articles/building-a-simple-website.html">Building a simple website</a></div>
     </span>
     <hr class="rounded">
     <div class="posts">
+      <div class="post">
+        <h1 class="post-title mb">
+          An InnerSourcing Approach within an Enterprise
+        </h1>
+        <span class="post-date">14th Feb 2021</span>
+        <h2 id="context" class="mb">Context:</h2>
+        <p>InnerSourcing. An approach that could revolutionise software development within enterprises, yet an approach unknown to most. So, what is InnerSourcing? Most people/companies have different interpretations, but overall, InnerSourcing takes the values and principles of "open source" and looks to apply that within an enterprise. Traditionally, software teams are siloed and have their objectives, meaning they are focused on their deliverables and nothing else. Typically, if these teams were to take a step back and look across the enterprise, they would see other teams trying to do the same thing, or even better, other teams have solved/come up with a solution already. What InnerSourcing tries to achieve is collaboration across teams to meet a common goal. Why have multiple teams work on the same thing separately, versus combining everyone's knowledge in these teams to work together to meet the outcome as one. </p>
+        <h2 id="advantages" class="mb">Advantages:</h2>
+        <p>InnerSourcing has some more values than just cross-team collaboration; some more advantages are:</p>
+        <ul>
+          <li><strong>Faster development:</strong>Having multiple developers from various teams will lead to faster development, versus a single team where only one or two developers may be focused on that deliverable.</li>
+          <li><strong>Documentation:</strong> If multiple teams are consuming a software product, more focus is put on writing good documentation. This is so developers looking to use the software product can get up and running quickly, rather than figure it out themselves.</li>
+          <li><strong>Code Reuse:</strong> It is better to build once and reuse multiple times, then build several times and use once. This is because code is more maintainable as if an update needs to be made, it gets made once, versus every team needing to make the same change.</li>
+          <li><strong>Encourage innovation:</strong> Innersourcing gets more minds on the same outcome. Naturally, this means a more diverse mindset, leading to a broader range of solutions being proposed to a problem; therefore, you encourage innovation. </li>
+          <li><strong>Healthy Competition:</strong> The more advanced companies create healthy competition by rewarding developers who have "InnerSourced" the most. Doing this gets the most out of your developers and keeps them engaged.</li>
+          <li><strong>Security & Quality:</strong> This is one of the more unrecognised values. Building something once and reusing it multiple times means if an urgent security vulnerability needs to be patched, the update just needs to be made to a single codebase. The teams using the fixed software need to do nothing. On the next release of their software, it will get automatically pulled down and patched.</li>
+        </ul>
+        <p>These are just a few examples to show why InnerSourcing can be such a success within enterprises. </p>
+        <h2 id="success-story" class="mb">Success Story</h2>
+        <p>At this point (traditionally) in my blog, I would usually explain how something works and share my experience/further thoughts on the topic. However, for this article, I would like to link out to a conference I spoke at back in 2018.</p>
+        <p>Every year, GitHub host a conference in San Francisco called "GitHub Universe". This conference focuses on all aspects of software development, where GitHub and companies present approaches and best practices. I was lucky enough to present on behalf of Lilly, to talk about Lillys's InnerSourcing journey and the value seen internally. I discuss the concepts of InnerSourcing, the approach taken, some statistics of adoption, then ending with some best practices and tips & tricks for other companies looking to adopt the same.</p>
+        <p>See the video below:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/L19lgbIPQZs" title="Lilly's InnerSourcing Journey" loading="lazy" allowfullscreen="true"></iframe>
+        <h2 id="conclusion" class="mb">Conclusion</h2>
+        <p>To conclude, similar to DevOps, InnerSourcing can be seen as an approach and methodology to transform IT enterprises' traditional culture and behaviours. It helps to have a central team spearheading the journey, as that team can focus on automating the process which sparks and enables InnerSourcing. Additionally, it also helps to share and use the same suite of DevOps Tools (such as source code and package manager tools), as this removes friction in the developer experience. Asking a developer to go between multiple tools will lead to developer frustration and therefore, a lower appetite to adopt InnerSourcing. Developer experience has to be at the heart and focal point of a companies InnerSourcing journey.</p>
+        <p>DevOps and InnerSourcing, although different, complement each other more then people realise. If companies lay solid foundations for one, it will naturally help lay the other's foundations, even if unintentional. Finally, I believe InnerSourcing will soon be the "norm" and a core approach for how software development occurs within enterprises. I am excited to see InnerSourcing grow and mature through various companies in the coming years. </p>
+      </div>
+      <hr class="rounded">
       <div class="post">
         <h1 class="post-title mb">
           <a href="./articles/centralised-vs-decentralised-devops.html"> Centralised vs Decentralised DevOps Toolchain - The Differences </a>
@@ -233,40 +262,10 @@
         <p>I genuinely believe GHAS Code Scanning has the foundation and vision to become a leader within the security space, whilst ensuring developer experience stays a core principle. Code Scanning is built directly into GitHub, which means developers find it easy to locate results and therefore action them. This is a primary behaviour any enterprise wants when introducing a new security tool. I am excited to see Code Scanning mature over the coming months and years. I believe the roadmap is strong. To conclude, GHAS Code Scanning can disrupt the developer ecosystem's security tooling space with the right push from the open-source and enterprise community's. Watch this space!</p>
         <p><i>I plan to update this blog as new features come out, and the service grows. Part 2 and Part 3 will come in the coming months focused on Secret Scanning &amp; Dependency Reviews.</i></p>
       </div>
-      <hr class="rounded">
-      <div class="post">
-        <h1 class="post-title mb" id="websimple">
-          <a href="./articles/building-a-simple-website.html"> Building a simple website </a>
-        </h1>
-        <span class="post-date">21st Jan 2021</span>
-        <h2 id="context-simple-website" class="mb">Context:</h2>
-        <p> This dates back to December 2020 over the Christmas break when I decided it would be a good idea to start my own technology blog. It is something I have been doing myself for the last few years, but never published publicly. I am lucky enough to work for a company and a role, that gives me opportunities to work with diverse teams (from a technology perspective), meaning I am in a unique position where I see a broad range of technologies and how technology is applied/adopted. My role is leading DevOps &amp; Developer Experience globally for a company called <a href="https://www.lilly.com/" target="_blank" rel="noreferrer"> Lilly</a>. Most of my day-to-day tasks involve improving developer momentum and building a community for developers to be successful. This blog represents my thoughts only, and no way represents the company's thoughts that I work for. </p>
-        <p> This leads me to this website, and the importance of this article's title, building a simple website. </p>
-        <h2 id="what-i-used-simple-website" class="mb">What I used:</h2>
-        <p> "What I used" is somewhat the most crucial section, as it walks through the journey that I went on for building this website and why building "simple" is so important. </p>
-        <p> JavaScript is by far my most comfortable language, and <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> VueJS</a> being my go-to front end framework. So naturally, I started there. It didn't take me long to have a simple blueprint in place. </p>
-        <p> I started by using the <a href="https://github.com/chrisvfritz/vue-enterprise-boilerplate" target="_blank" rel="noreferrer"> VueJS Enterprise Boilerplate</a>, that comes with some great tools and utils out of the box, and a stable build process with <a href="https://nuxtjs.org/"> Nuxt</a>. I built on-top of this blueprint, adding some simple components and style that made my application look like a blog. I was getting ready to publish when my DevOps side came out and thought I should run my blog through <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" rel="noreferrer"> lighthouse</a> to check performance, accessibility and best practice. The results were poor, </p>
-        <ul>
-          <li>Accessibility was at 65%.</li>
-          <li>Performance was at 71%.</li>
-          <li>Best Practise was 73%.</li>
-        </ul>
-        <p> The scores above came down to the application having so much going on. Specifically, the performance score was low for a few reasons. A few being: The network payload was 12,210kb, the JavaScript execution time was 1.9 seconds, and the DOM contained 210 elements! I spent a few hours fine-tuning the bundle, reducing a lot of JavaScript "bloat" that wasn't needed, and that did help improve the score, but that made me pause, take a step back, and think, why am I doing this. Why am I spending time fine-tuning an application, with so much bloat, that just shouldn't be needed for my use case? I wanted to build a site where I can share my experiences with others in a comfortable and consumable way. I was overcomplicating the simple. Taking a look at my code base, it already had over 40 files (a lot of these being configuration files, obviously), and the total LOC came over 3000 lines (ignoring the package-lock file). I only had 1 blog post. </p>
-        <p> This was when I decided to go back to basics and go "old school" with a simple, static HTML and CSS site. Fast forward 55 minutes, I had a simple website built, that meet my use case. The only technologies I used was HTML &amp; CSS, I had no JS, as it just wasn't needed. When running it through lighthouse again, the difference was insane:  </p>
-        <ul>
-          <li>Accessibility was at 95%.</li>
-          <li>Performance was at 100%.</li>
-          <li>Best Practise was 100%.</li>
-        </ul>
-        <p> The network payload was under 1,000kb, the JavaScript execution time went down to 0.4 seconds, and the DOM size was minimal. In all, there was just so much less pressure on the browser. The number of files totalled 19, and my overall LOC come out under 500 lines. I spent about 20 minutes fine-tuning, but that it. </p>
-        <h2 id="what-i-learned-from-this-experience-simple-website" class="mb">What I learned from this experience:</h2>
-        <p> What have I learnt from this? In a few words, simplicity is vital. Always think about your use case and what you need to build. Ask yourself, what is the most straightforward path I can take to achieve success. Now, I agree that nowadays, personalised experiences are vital, and dynamic content is the norm. This naturally means front end frameworks like VueJS, React, etc. are the standard and the "go-to". This theory showed as my "go-to" for building this website was VueJS. I didn't even think of anything else, mostly plain HTML. But this isn't, and shouldn't always be the case. I recognise that instead of thinking about the product I was building, my focus went straight to the technology and what I was going to use. </p>
-        <p> To conclude, building this website has actually been fun. It has made me go back to my roots and write some vanilla HTML. It has made me realise I rely too heavily on third-party frameworks. Finally, it has made me realise that building a performant and optimal website is made easy by starting simple. If this blog expands, moving to a more progressive &amp; dynamic application may be needed, but for now, my simple design meets what I needed to build. </p>
-      </div>
     </div>
     <div class="pagination">
       <span class="pagination-item older">Older</span>
-      <span class="pagination-item newer">Newer</span>
+      <a href ="/articles/page/2.html"><span class="pagination-item newer">Newer</span></a>
     </div>
     </div>
 <script>

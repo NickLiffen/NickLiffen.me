@@ -8,6 +8,27 @@ html {
 	}
 }
 
+@media screen and (min-width: 1072px) {
+  .video {
+		height: 320px;
+		width: 600px;
+  }
+}
+
+@media screen and (max-width: 1072px) and (min-width: 630px) {
+  .video {
+		height: 260px;
+		width: 450px;
+  }
+}
+
+@media screen and (max-width: 630px) and (min-width: 1px) {
+  .video {
+		height: 260px;
+		width: 450px;
+  }
+}
+
 @media(min-width:58rem) {
 	html {
 		font-size: 20px
