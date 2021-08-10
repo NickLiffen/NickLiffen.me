@@ -144,11 +144,11 @@
         <p>Let's talk about the pros:</p>
 
         <ul>
-            <li><strong>Less Code:</strong> We don't have to write a custom lambda to enter data into the DB. Step functions have a native integration with DynamoDB, meaning we don't have to write code to do something preexisting. </li>
-            <li><strong>Less AWS Resource(s):</strong> No need for any queues. We use the state machine to send data to the following lambda in the chain. </li>
-            <li><strong>Process Overview:</strong> Easy to see the whole process in action. Step Functions easy allow you to see the data that is processing. </li>
-            <li><strong>Easy to find problems:</strong> Don't you dislike having to crawl through cloudwatch events to find errors logged out from a lambdas console? Using AWS Step Functions allows you to quickly find errors via the Step Functions GUI as you can crawl through the state machines events to find problems. </li>
-            <li><strong>Built in retries:</strong> Sometimes lambdas error and writes into DynamoDB's fail. Although they are rare, if not handled correctly, they could cause downstream dilemmas. Step Functions have inbuilt retry capabilities that allow you to retry on specific errors. Meaning you can only retry on event errors that you would like to retry on.</li>
+            <li><strong>Less Code:</strong> We don't have to write a custom lambda to enter data into the DB. Step functions have a native integration with DynamoDB, meaning we don't have to write code to do something preexisting. More information on integrations can be found here: <a href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-service-integrations.html" target="_blank" rel="noreferrer">Using AWS Step Functions with other services</a>.</li>
+            <li><strong>Less AWS Resource(s):</strong> No need for any queues. We use the state machine to send data to the following lambda in the chain. More information on how to send data within step functions can be found here: <a href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-data.html" target="_blank" rel="noreferrer">State Machine Data</a></li>
+            <li><strong>Process Overview:</strong> Easy to see the whole process in action. Step Functions easy allow you to see the data that is processing. To see more information on seeing the overall process, check out this link: <a href="https://docs.aws.amazon.com/step-functions/latest/dg/concepts-input-output-filtering.html" target="_blank" rel="noreferrer">Input and Output Processing in Step Functions</a></li>
+            <li><strong>Easy to find problems:</strong> Don't you dislike having to crawl through cloudwatch events to find errors logged out from a lambdas console? Using AWS Step Functions allows you to quickly find errors via the Step Functions GUI as you can crawl through the state machines events to find problems. I find this link really useful for more information on debugging: <a href="https://docs.aws.amazon.com/step-functions/latest/dg/monitoring-logging.html" target="_blank" rel="noreferrer">Monitoring &amp; Logging</a></li>
+            <li><strong>Built in retries:</strong> Sometimes lambdas error and writes into DynamoDB's fail. Although they are rare, if not handled correctly, they could cause downstream dilemmas. Step Functions have inbuilt retry capabilities that allow you to retry on specific errors. Meaning you can only retry on specific event errors that you would like to retry on. More information on this can be found here: <a href="https://aws.amazon.com/blogs/developer/handling-errors-retries-and-adding-alerting-to-step-function-state-machine-executions/" target="_blank" rel="noreferrer">Monitoring &amp; Logging</a></li>
 
         </ul>
 
@@ -197,7 +197,7 @@ States:
         StateMachineArn: "${ChildStateMachineArn}"
         Input:
         UserDetails.$: "$.UserDetails"
-        AWS_STEP_FUNCTIONS_STARTED_BY_EXECUTION_ID.$: "$$.Execution.Id"
+        AWS_STEP_FUNCTIONS_STARTED_BY_EXECUTION_ID.$: "$$.Ex.Id"
         </pre>
 
         <p>Taking the above two code snippets, you are looping through the user's array of objects and sending one user at a time. Let's say you have 1,000 users; you are spinning up 1,000 child step functions and processing one user at a time. </p>
