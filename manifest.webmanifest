@@ -43,6 +43,16 @@
 			"name": "Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise | Blog Post",
 			"url": "articles/innersourcing.html",
 			"short_name": "An InnerSourcing Approach within an Enterprise"
+		},
+		{
+			"name": "Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post",
+			"url": "articles/step-functions.html",
+			"short_name": "Coordinating a multi-lambda software product"
+		},
+		{
+			"name": "Nick Liffen's Blog | The Importance of Developer Experience | Blog Post",
+			"url": "articles/developer-evolution.html",
+			"short_name": "The Importance of Developer Experience"
 		}
 	]
 }

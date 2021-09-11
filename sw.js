@@ -14,6 +14,7 @@ this.addEventListener('install', function(e) {
       '/articles/centralised-vs-decentralised-devops.html',
       '/articles/innersourcing.html',
       '/articles/step-functions.html',
+      'articles/developer-evolution.html',
       '/articles/page/2.html'
     ]);
   }))
