@@ -9,6 +9,20 @@
   <category>Web Development</category>
   <language>en-GB</language>
   <item>
+    <title>Nick Liffen's Blog | The Importance of Developer Experience | Blog Post</title>
+    <link>https://nickliffen.me/articles/developer-evolution.html</link>
+    <description>Nick Liffen's Blog | The Importance of Developer Experience - Developer roles are evolving! | Blog Post</description>
+    <guid>https://nickliffen.me/articles/developer-evolution.html</guid>
+    <pubDate>Sat, 11 Sep 2021 18:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post</title>
+    <link>https://nickliffen.dev/articles/step-functions.html</link>
+    <description>Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post</description>
+    <guid>https://nickliffen.dev/articles/step-functions.html</guid>
+    <pubDate>Sun, 29 Aug 2021 18:00:00 GMT</pubDate>
+  </item>
+  <item>
     <title>Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise  | Blog Post</title>
     <link>https://nickliffen.dev/articles/innersourcing.html</link>
     <description>Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise from Eli Lilly on InnerSourcing | Blog Post</description>
