@@ -1,18 +1,19 @@
 {
 	"short_name": "Nick Liffen's Blog",
 	"name": "Nick Liffen's Blog | Technology, DevOps and Developer Blog",
-	"icons": [{
-			"src": "icon.png",
-			"type": "image/png",
-			"sizes": "192x192",
-			"purpose": "any maskable"
-		},
-		{
-			"src": "tile.png",
-			"type": "image/png",
-			"sizes": "512x512",
-			"purpose": "any maskable"
-		}
+	"icons": [
+	  {
+		"src": "icon.png",
+		"type": "image/png",
+		"sizes": "192x192",
+		"purpose": "any maskable"
+	  },
+	  {
+		"src": "tile.png",
+		"type": "image/png",
+		"sizes": "512x512",
+		"purpose": "any maskable"
+	  }
 	],
 	"start_url": "./",
 	"scope": ".",
@@ -20,39 +21,48 @@
 	"theme_color": "#fafafa",
 	"display": "fullscreen",
 	"prefer_related_applications": false,
-	"categories": ["education", "security"],
+	"categories": [
+	  "education",
+	  "security"
+	],
 	"description": "Nick Liffen's Blog | Focusing on DevOps, Developer Experince and all aspects of Technology",
 	"dir": "auto",
 	"lang": "en-GB",
-	"shortcuts": [{
-			"name": "Nick Liffen's Blog | Technology, DevOps and Developer Blog",
-			"url": "/",
-			"short_name": "Blog Home Page"
-		},
-		{
-			"name": "Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post",
-			"url": "/articles/review-ghas-code-scanning-enterprise.html",
-			"short_name": "GHAS Blog Post"
-		},
-		{
-			"name": "Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post",
-			"url": "articles/centralised-vs-decentralised-devops.html",
-			"short_name": "Centralised vs Decentralised DevOps"
-		},
-		{
-			"name": "Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise | Blog Post",
-			"url": "articles/innersourcing.html",
-			"short_name": "An InnerSourcing Approach within an Enterprise"
-		},
-		{
-			"name": "Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post",
-			"url": "articles/step-functions.html",
-			"short_name": "Coordinating a multi-lambda software product"
-		},
-		{
-			"name": "Nick Liffen's Blog | The Importance of Developer Experience | Blog Post",
-			"url": "articles/developer-evolution.html",
-			"short_name": "The Importance of Developer Experience"
-		}
+	"shortcuts": [
+	  {
+		"name": "Nick Liffen's Blog | Technology, DevOps and Developer Blog",
+		"url": "/",
+		"short_name": "Blog Home Page"
+	  },
+	  {
+		"name": "Nick Liffen Blog | Review of GitHub Code Scanning | Blog Post",
+		"url": "/articles/review-ghas-code-scanning-enterprise.html",
+		"short_name": "GHAS Blog Post"
+	  },
+	  {
+		"name": "Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post",
+		"url": "articles/centralised-vs-decentralised-devops.html",
+		"short_name": "Centralised vs Decentralised DevOps"
+	  },
+	  {
+		"name": "Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise | Blog Post",
+		"url": "articles/innersourcing.html",
+		"short_name": "An InnerSourcing Approach within an Enterprise"
+	  },
+	  {
+		"name": "Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post",
+		"url": "articles/step-functions.html",
+		"short_name": "Coordinating a multi-lambda software product"
+	  },
+	  {
+		"name": "Nick Liffen's Blog | The Importance of Developer Experience | Blog Post",
+		"url": "articles/developer-evolution.html",
+		"short_name": "The Importance of Developer Experience"
+	  },
+	  {
+		"name": "Nick Liffen's Blog | Why Advanced Security? | Blog Post",
+		"url": "articles/why-advanced-security.html",
+		"short_name": "Why Advanced Security?"
+	  }
 	]
-}
+  }
